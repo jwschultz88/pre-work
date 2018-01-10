@@ -3,47 +3,111 @@
     <head>
         <title>Foodies</title>
         <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <style>
             @import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display');
-            #title {
-                font-family: 'Sedgwick Ave Display', cursive;
+
+            .container {
+                background-color: black;
             }
 
-            #content {
+            .special {
+                font-family: 'Sedwick Ave Display', cursive;
+                color: ghostwhite;
+                font-size: 20px;
+            }
+            #title {
+                font-family: 'Sedgwick Ave Display', cursive;
+                color: ghostwhite;
+                background-color: black;
+            }
+
+            #tron {
+                font-family: 'Sedgwick Ave Display', cursive;
+                color: red;
+                background-color: black;
+            }
+
+            #content, #footer {
+                color: ghostwhite;
                 font-size: 18px;
                 text-align: center;                
                 margin-left: auto;
                 margin-right: auto;
             }
+
+            #id {
+                background-color: black;
+            }
+
+            a:hover {
+                color: black;
+            }
         </style>
+        <noscript>Best way to experience this site is with JavaScript on!</noscript>
     </head>
     <body>
-        <div id="header">
-            <div id="title">
-                <h1>Foodies</h1>
+        <div class="container">
+            <div id="header">
+                <div class="jumbotron text-center" id="title">
+                    <br />
+                    <h1>FOODIES</h1>
+                </div>
+                <ul class="nav nav-tabs" id="navigation">
+                    <li class="active"><a href="index.html"><span id="home" class="glyphicon glyphicon-home"></span></a></li>
+                    <li><a href="menu.html"><span id="menu" class="glyphicon glyphicon-cutlery"></span></a></li>
+                    <li><a href="contactUs.html"><span id="contact" class="glyphicon glyphicon-earphone"></span></a></li>
+                </ul>
             </div>
-            <hr />
-            <div id="navigation">
-                <p>
-                    <a href="index.html">Home</a>  
-                    <a href="menu.html" target="_blank">Menu</a>  
-                    <a href="contactUs.html" target="_blank">Contact Us</a>
-                </p>
+            <div class="jumbotron" id="tron">
+                <h1>Grand Opening this Weekend</h1>
             </div>
-        </div>
-        <div id="main">
-            <div id="image">
-               <img src="images/dark-mood-food.jpg" alt="Photograph a dark bowl of berries" style="display: block; margin-left: auto; margin-right: auto;" />
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+               <div class="carousel-inner">
+                    <div class="col-sm-12 item active">
+                        <img src="images/dark-mood-food.jpg" alt="Photograph a dark bowl of berries" style="display: block; margin-left: auto; margin-right: auto; height: 458px; width: 640px;" />
+                        <br />
+                    </div>
+                    <div class="col-sm-12 item">
+                        <h1 class="special">We're rolling out our seasonal menu, with special options for this season.</h1>
+                        <img src="images/burning-log.jpg" alt="Photograph of a dark forest" style="display: block; margin-left: auto; margin-right: auto; height: 406px; width: 640px;" />
+                        <br />
+                    </div>
+                    <div class="col-sm-12 item">
+                        <h1 class="special">The Drink of the Month is SG Special Brew.</h1>
+                        <img src="images/coffee.jpg" alt="Photograph of a cup of coffee" style="display: block; margin-left: auto; margin-right: auto; height: 406px; width: 640px;" />
+                        <br />
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div id="content">
-                <p>We at Foodies serve all the food for the people who love food.</p>
-                <p>If you love food come to Foodies and we will have your favorite food.</p>
-                <p>And, if we don't we will make the food and add it to the menu.</p>
+            <div id="content" class="row text-center">
+                <div class="col-sm-12">
+                    <p>We at Foodies serve all the food for the people who love food.</p>
+                    <p>If you love food come to Foodies and we will have your favorite food.</p>
+                    <p>And, if we don't we will make the food and add it to the menu.</p>
+                </div>
             </div>
-        </div>
-        <div id="footer">
-            <p>555 Food Street, Foodville, New Hampshire, 00001</p>
-            <p>(603)555-1234</p>
+                <div id="footer">
+                    <br />
+                    <p>555 Food Street, Foodville, New Hampshire, 00001</p>
+                    <p>(603)555-1234</p>
+                    <br />
+                 </div>
         </div>
     </body>
 </html>
