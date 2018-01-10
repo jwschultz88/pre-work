@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Joe Schmoe's Portfolio</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <style>
+            table, th, td {
+                border: 1px solid #292533;
+                padding: 5px 10px 5px 10px; /* top right bottom left */
+                border-spacing: 2px 5px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            td, th {
+                height: 30px;
+            }
+
+            th {
+                background-color: #5b7d87;
+                color: white;
+            }
+
+            tr:nth-child(odd) {
+                background-color: #d5d2cb;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="title">
+            <h1>Joe Schmoe's Portfolio</h1>
+        </div>
+        <div id="navigation">
+            <hr />
+            <!-- The links we'll need are: projects.html, contactMe.html, and testimonials.html -->
+            <p>
+                <a href="portfolio.html" target="_blank">Portfolio</a>  
+                <a href="contactMe.html" target="_blank"</a>Contact Me</a>  
+                <a href="testimonials.html" target="_blank">Testimonials</a></p>
+            <hr />
+        </div>
+        <div id="main">
+            <div id="aboutMe">
+                <div class="image"><img src="images/lion.jpg" alt="Photograph of a male lion." /></div>
+                <div class="content">
+                    <h2><em>About Me</em></h2>
+                    <p>For all the awesome stuff about me!</p>
+                    <p>For even MORE amazing stuff about ME!</p>
+                </div>
+            </div>
+            <div id="experiences">
+                <div class="image"><img src="images/freerider.jpg" alt="Photo of a skier on a snowy slope." /></div>
+                <div class="content">
+                    <h2><em>Past Experiences</em></h2>
+                    <table>
+                        <caption>Employment History</caption>
+                        <tr>
+                            <th>Year</th>
+                            <th>Title</th>
+                            <th>Company</th>
+                        </tr>
+                        <tr>
+                            <td>Current</td>
+                            <td>Apprentice</td>
+                            <td>The Software Guild</td>
+                        </tr>
+                        <tr>
+                            <td>2012-2017</td>
+                            <td>Clerk</td>
+                            <td>LostUrMail Shipping</td>
+                        </tr>
+                        <tr>
+                            <td>2000-2012</td>
+                            <td>Student</td>
+                            <td>University of Schmoe</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="hobbies">
+                <div class="image">
+                    <img src="images/beach.jpg" alt"Photo of a grouping of chairs and coolers on a sandy beach near an ocean." />
+                    <p><a href="https://flic.k/p/aiGiQi" target="_blank">Photo By RichardBH</a>, available by <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank">CC BY-SA 2.0</a></p>
+                </div>
+                <div class="content">
+                    <h2><em>Hobbies</em></h2>
+                    <ul>
+                        <li>Reading</li>
+                        <ol>
+                            <li>Stephen King</li>
+                            <li>Jim Butcher</li>
+                            <li>Robin Hood</li>
+                        </ol>
+                        <li>Fun Runs!</li>
+                        <ol>
+                            <li>The Color Run</li>
+                            <li>Run of Your Lives</li>
+                            <li>Rugged Maniac</li>
+                        </ol>
+                        <li>Ski Slopes</li>
+                        <ul>
+                            <li>Snowmass, Colorado</li>
+                            <li>Taos, New Mexico</li>
+                            <li>Okemo, Vermont</li>
+                        </ul>
+                        <li>Virtual Running Groups</li>
+                        <ul>
+                            <li>Hogwarts Running Club</li>
+                            <li>Whovian Running Club</li>
+                            <li>Virtual Pace Series</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id ="footer">
+            <hr />
+            <footer>
+                <p>&copy; 2136 Joe Schmoe</p>
+                <p><a href="https://thesoftwareguild.com" target="_blank">The Software Guild</a></p>
+            </footer>
+        </div>
+    </body>
+</html>

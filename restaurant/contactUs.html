@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Foodies</title>
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display');
+            #title {
+                font-family: 'Sedgwick Ave Display', cursive;
+            }
+        
+            #main, legend {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .info {
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div id="title">
+                <h1>Foodies</h1>
+            </div>
+            <hr />
+            <div id="navigation">
+                <p>
+                    <a href="index.html">Home</a>  
+                    <a href="menu.html" target="_blank">Menu</a>  
+                    <a href="contactUs.html">Contact Us</a>
+                </p>
+            </div>
+        </div>
+        <div id="main">
+            <form action="submit.html" method="POST">
+                <div class="info">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                    <br />
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required/>
+                    <br />
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" required/>
+                </div>
+                <br />
+                <label for="inquiry">Reason for Inquiry</label>
+                <select id="inquiry" name="inquiry">
+                    <option value="catering" selected>Catering</option>
+                    <option value="party">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+                <br />
+                <label for="information">Additional Information</label>
+                <textarea id="information"></textarea>
+                <fieldset>
+                    <legend>Have you been to the restaurant?</legend>  
+                    <input type="radio" id="choice1" name="question" value="No" />
+                    <label for="choice1">No</label>  
+                    <input type="radio" id="choice2" name="question" value="Yes" />
+                    <label for="choice2">Yes</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Best days to contact you:</legend>  
+                    <input type="checkbox" id="mon" name="contact" value="Mon" />
+                    <label for="Mon">M</label>  
+                    <input type="checkbox" id="tue" name="contact" value="Tue" />
+                    <label for="Mon">T</label>  
+                    <input type="checkbox" id="wed" name="contact" value="Wed" />
+                    <label for="Mon">W</label>  
+                    <input type="checkbox" id="thu" name="contact" value="Thu" />
+                    <label for="Mon">Th</label>  
+                    <input type="checkbox" id="fri" name="contact" value="Fri" />
+                    <label for="Mon">F</label>  
+                </fieldset>
+                <input type="submit" name="submit" value="Submit" />
+            </form>
+        </div>
+        <div id="footer">
+            <p>555 Food Street, Foodville, New Hampshire, 00001</p>
+            <p>(603)555-1234</p>
+        </div>
+    </body>
+</html>
